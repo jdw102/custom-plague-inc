@@ -1,0 +1,48 @@
+{
+  "defaultOperation": "NormalOperation",
+  "acceptedOperations": ["NormalOperation", "ComplementOperation"],
+  "defaultPopulation": "Normal",
+  "populations": ["Normal", "Aware", "Informed","Deceived"],
+  "targetPopulations": [
+    {
+      "name": "Aware",
+      "source": "Normal",
+      "drains": [
+        {
+          "name": "Deceived",
+          "operation": "MultiplyOperation",
+          "factors": [
+            {
+              "type": "CoreFactor",
+              "name": "Plausibility",
+              "operation": "ShiftedSineOperation"
+            }
+          ]
+        },
+        {
+          "name": "Informed",
+          "operation": "MultiplyOperation",
+          "factors": [
+            {
+              "type": "CoreFactor",
+              "name": "Plausibility",
+              "operation": "NegativeShiftedSineOperation"
+            }
+          ]
+        }
+      ],
+      "growthFactorsOperation": "MultiplyOperation",
+      "sourceFactorsOperation": "SumOperation",
+      "growthFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Virality",
+          "operation": "NormalOperation"
+        }
+      ],
+      "sourceFactors" : [
+
+      ]
+    }
+  ]
+}

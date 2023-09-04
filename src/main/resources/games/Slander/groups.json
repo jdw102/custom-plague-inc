@@ -1,0 +1,16 @@
+{
+  "groups":[
+    {
+      "id": 0,
+      "name": "Plausibility"
+    },
+    {
+      "id": 1,
+      "name": "Comedy"
+    },
+    {
+      "id": 2,
+      "name": "Authority Evasion"
+    }
+  ]
+}

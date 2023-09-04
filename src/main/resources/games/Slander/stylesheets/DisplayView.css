@@ -1,0 +1,179 @@
+.plagueview {
+  -fx-background-color: #ffffff;
+}
+
+.Light {
+  -fx-background-color: #929ea8;
+}
+
+.Dark {
+  -fx-background-color: #3a3535;
+}
+
+.timebox {
+
+}
+
+.settingsbox {
+  -fx-spacing: 10;
+}
+
+.gamedatabox {
+  -fx-spacing: 10;
+}
+
+
+.styleselector{
+  -fx-pref-height: 40;
+}
+
+.datebox {
+  -fx-font-size: 12 pt;
+  -fx-text-fill: #000000;
+  -fx-background-color: pink;
+  -fx-max-height: 32;
+  -fx-max-width: 90;
+  -fx-text-box-border: #000000;
+}
+
+.countrybutton {
+  -fx-pref-height: 40;
+  -fx-pref-width: 60;
+}
+
+.headlinebox {
+  -fx-font-size: 16 pt;
+  -fx-alignment: center;
+  -fx-text-fill: red;
+  -fx-background-color: pink;
+  -fx-max-height: 25;
+  -fx-max-width: 400;
+}
+
+.playbutton {
+  -fx-background-image: url("../../../images/playbutton.png");
+  -fx-pref-height: 8;
+  -fx-pref-width: 30;
+  -fx-background-size: 45px 45px;
+  -fx-background-position: center;
+}
+
+.pausebutton {
+  -fx-background-image: url("../../../images/pausebutton.png");
+  -fx-pref-height: 8;
+  -fx-pref-width: 30;
+  -fx-background-size: 45px 45px;
+  -fx-background-position: center;
+}
+
+.fastforwardbutton {
+  -fx-background-image: url("../../../images/fastforwardbutton.png");
+  -fx-pref-height: 8;
+  -fx-pref-width: 30;
+  -fx-background-size: 45px 45px;
+  -fx-background-position: center;
+}
+
+.perkbutton {
+  -fx-background-image: url("../../../images/support.png");
+  -fx-pref-height: 40;
+  -fx-pref-width: 40;
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+}
+
+.worldbutton {
+  -fx-background-image: url("../../../images/globe.png");
+  -fx-pref-height: 40;
+  -fx-pref-width: 40;
+  -fx-background-position: center;
+}
+
+.rightprogressbar {
+  -fx-text-box-border: #02034d;
+  -fx-control-inner-background: #858ae3;
+  -fx-accent: #081bea;
+  -fx-max-height: 25;
+  -fx-max-width: 400;
+}
+
+.leftprogressbar {
+  -fx-text-box-border: #6e0107;
+  -fx-control-inner-background: #ee4f4f;
+  -fx-accent: #dc0b0b;
+  -fx-max-height: 25;
+  -fx-max-width: 400;
+}
+
+.lefttextarea {
+  -fx-opacity: 1.0;
+  -fx-min-height: 40;
+  -fx-min-width: 200;
+  -fx-font-size: 16 pt;
+  -fx-border-style: solid;
+  -fx-border-radius: 10;
+  -fx-text-fill: #0e0e0e;
+  -fx-border-color: #6e0107;
+  -fx-background-color: #f58b8b;
+  -fx-background-radius: 10;
+  -fx-alignment: center;
+}
+
+.righttextarea {
+  -fx-opacity: 1.0;
+  -fx-min-height: 40;
+  -fx-min-width: 200;
+  -fx-font-size: 16 pt;
+  -fx-border-style: solid;
+  -fx-border-radius: 10;
+  -fx-text-fill: #0e0e0e;
+  -fx-border-color: #030e57;
+  -fx-background-color: #8b90f5;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-alignment: center;
+}
+
+.topbar {
+  -fx-padding: 10;
+  -fx-spacing: 10;
+  -fx-spacing: 150;
+  -fx-alignment: center;
+}
+
+.exitbutton {
+  -fx-pref-width: 40;
+  -fx-pref-height: 40;
+  -fx-background-image: url("../../../images/exitbutton.png");
+  -fx-background-size: 45px 45px;
+  -fx-background-position: center;
+}
+
+.regionfactortable {
+  -fx-max-height: 130;
+}
+
+.regionpopulationtable {
+  -fx-pref-height: 130;
+}
+
+
+
+.default-color0.chart-pie { -fx-pie-color: #002aff; }
+.default-color1.chart-pie { -fx-pie-color: #00ff33; }
+.default-color2.chart-pie { -fx-pie-color: #e80505; }
+.default-color3.chart-pie { -fx-pie-color: #ffac2f; }
+.default-color4.chart-pie { -fx-pie-color: #f700ff; }
+
+.chart {
+  -fx-pref-height: 120;
+  -fx-pref-width: 120;
+}
+
+.map-node {
+  -fx-background-image: url("../map_backgrounds/corkboard.jpg");
+  -fx-alignment: center;
+}
+
+
+

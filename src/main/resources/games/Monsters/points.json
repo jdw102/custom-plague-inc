@@ -1,0 +1,22 @@
+{
+  "pointsParameters": {
+    "pointsOperation": "DefaultPointsOperation",
+    "growthFactorsOperation": "SumOperation",
+    "spreadFactorsOperation": "SumOperation",
+    "populations": [
+      "Transformed",
+      "Dead"
+    ],
+    "growthFactors": [
+      {
+        "type": "CoreFactor",
+        "name": "Viciousness",
+        "operation": "NormalOperation"
+      }
+    ],
+    "spreadFactors": [
+    ],
+    "maxPoints": 100,
+    "startPoints": 0
+  }
+}

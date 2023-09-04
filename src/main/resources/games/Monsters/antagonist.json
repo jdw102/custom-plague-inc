@@ -1,0 +1,10 @@
+{
+  "antagonist": {
+    "trackedPopulations": [
+      "Transformed",
+      "Dead"
+    ],
+    "startingProgress": 0.0,
+    "thresholdOperation": "GreaterThanOperation"
+  }
+}

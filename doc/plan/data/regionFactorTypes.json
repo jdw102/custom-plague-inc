@@ -1,0 +1,76 @@
+{
+  "regionFactorTypes": [
+    {
+      "name": "climate",
+      "defaultLevel": "normal",
+      "values": [
+        {
+          "level": "arid",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "humid",
+          "antagonistBaseEffectiveness": 1.0
+        }
+      ]
+    },
+    {
+      "name": "temperature",
+      "defaultLevel": "normal",
+      "values": [
+        {
+          "level": "hot",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "cold",
+          "antagonistBaseEffectiveness": 1.0
+        }
+      ]
+    },
+    {
+      "name": "wealth",
+      "defaultLevel": "normal",
+      "values": [
+        {
+          "level": "poor",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "rich",
+          "antagonistBaseEffectiveness": 1.0
+        }
+      ]
+    },
+    {
+      "name": "populationDensity",
+      "defaultLevel": "normal",
+      "values": [
+        {
+          "level": "rural",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "urban",
+          "antagonistBaseEffectiveness": 1.0
+        }
+      ]
+    }
+  ]
+}

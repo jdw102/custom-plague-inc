@@ -1,0 +1,15 @@
+{
+  "pointsParameters": {
+    "populations": [
+      "Infected",
+      "Dead"
+    ],
+    "factors": [
+      {
+        "type": "CoreFactor",
+        "name": "Severity",
+        "operation": "NormalOperation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "_comment" : "Example code for setting up perks. Type corresponds to which protagonists defined in protagonistTypes  json this is available for. Cost describes how many userpoints it costs. prereqIDs describe what previous perks need to be unlocked for this perk to be available--if this is empty, the perk is available by default. factorsModified describes any of the possible factors this perk might add and the impact (+ this amount) it will contribute. Cure complexity is not something defined in protagonist types--it is default 100 and is used as the total value that \"antagonist\" must reach, so perks that modify this will just add to this total value.",
+  "perks": [
+    {
+      "id" : 2,
+      "group": 0,
+      "name" : "Coughing",
+      "imagePath": "perks_icons/air.png",
+      "description" : "Respiratory irritation causes expulsion of pathogen into surrounding area . (taken from real Plague Inc)",
+      "cost" : 9,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Air",
+          "effect" : 0.09
+        },
+        {
+          "factor" : "Climate",
+          "name" : "Arid",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "group": 0,
+      "name" : "Sneezing",
+      "imagePath": "perks_icons/sneeze.png",
+      "description" : "Convulsive air expulsion causes infection to spread through water droplets.",
+      "cost" : 4,
+      "prereqID" : [2],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor" : "Core",
+          "name" : "Severity",
+          "effect" : 0.01
+        },
+        {
+          "factor" : "Density",
+          "name" : "Urban",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "group": 0,
+      "name" : "Sore Throat",
+      "imagePath": "perks_icons/soreThroat.png",
+      "description" : "Back of throat becomes inflamed, causing the disease to be more severe.",
+      "cost" : 4,
+      "prereqID" : [2],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Severity",
+          "effect" : 0.05
+        },
+        {
+          "factor": "Core",
+          "name" : "Lethality",
+          "effect" : 0.01
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "group": 1,
+      "name" : "Land",
+      "imagePath": "perks_icons/land.png",
+      "description" : "Infection becomes more transmissible from person-to-person, making it spread faster over land.",
+      "cost" : 4,
+      "prereqID" : [1],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Land",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 6,
+      "group": 1,
+      "name" : "Sea 1",
+      "imagePath": "perks_icons/sea.png",
+      "description" : "Pathogen can survive outside the body in fresh, warm water. Increase infectivity, especially in humid environments and ship transmission (Plague Inc.)",
+      "cost" : 4,
+      "prereqID" : [5],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Sea",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 7,
+      "group": 1,
+      "name" : "Air 1",
+      "imagePath": "perks_icons/air.png",
+      "description" : "The pathogen's airborne survivability increases, making it more transmissible through air travel.",
+      "cost" : 4,
+      "prereqID" : [5],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Air",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 8,
+      "group": 1,
+      "name" : "Sea 2",
+      "imagePath": "perks_icons/sea.png",
+      "description" : "Pathogen's ability to survive in fresh, warm water increases.",
+      "cost" : 4,
+      "prereqID" : [6, 5, 7],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Sea",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 14,
+      "group": 1,
+      "name" : "Humidity Resistance",
+      "imagePath": "perks_icons/sea.png",
+      "description" : "Pathogen becomes more resistant to humid environments.",
+      "cost" : 4,
+      "prereqID" : [6, 5, 7],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Land",
+          "effect" : 0.08
+        },
+        {
+          "factor": "Climate",
+          "name" : "Humid",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 15,
+      "group": 1,
+      "name" : "Aridity Resistance",
+      "imagePath": "perks_icons/air.png",
+      "description" : "Pathogen becomes more resistant to humid environments.",
+      "cost" : 4,
+      "prereqID" : [6, 5, 7],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Land",
+          "effect" : 0.08
+        },
+        {
+          "factor": "Climate",
+          "name" : "Arid",
+          "effect" : 0.08
+        }
+      ]
+    },
+    {
+      "id" : 9,
+      "group": 1,
+      "name" : "Air 2",
+      "imagePath": "perks_icons/air.png",
+      "description" : "Pathogen's airborne transmissibility increases.",
+      "cost" : 4,
+      "prereqID" : [6, 5, 7],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name" : "Infectivity",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name" : "Air",
+          "effect" : 0.08
+        }
+      ]
+    }
+  ]
+}

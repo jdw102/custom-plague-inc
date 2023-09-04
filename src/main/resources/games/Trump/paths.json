@@ -1,0 +1,43 @@
+{
+  "_comment" : "Example code for setting up 2 path types. Path with id 0 will be by default set up by adjacency as seen in map file (cells of type x with a neighboring cell of y mean regions x and y are connected by type 0, here called Land). Other path connections are defined in the regions.json file. protagonistBaseEffectivity refers to protagonist (pathogen, in our base game)'s transmissibility via that transportation type and should be a nonzero value. Animation type will decide if the img will travel in a straight line (path) or popup in the country of origin and then the target country (fade) (more animations might be added later?). Symbol maps to the symbol associated with some cell in the map file and will set the corresponding port there; if no port is defined a cell within that region will be chosen at random if that region allows for that path type (as defined in the region file). SubPopulationSpread details what possible subpopulations this path can spread and will be calculated based on the values of that subpopulation in the origin country and whatever relevant modifiers exist to result in some percent chance that the path spreads that subpopulation. If the percentage is then not met by some RNG, the default population will be the one spread.",
+  "paths": [
+    {
+      "id" : 0,
+      "name" : "Word of Mouth",
+      "numSpread" : 10,
+      "subPopulationSpread" : [
+
+      ]
+    },
+    {
+      "id" : 1,
+      "name" : "Internet",
+      "img" : "path_icons/flash.png",
+      "portImg" : "port_icons/network-connection.png",
+      "animationType" : "Line",
+      "symbol" : "^",
+      "numSpread" : 75,
+      "subPopulationSpread" : [
+        {
+          "type" : "Potential",
+          "pointsWorth" : 0
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "name" : "TV",
+      "img" : "path_icons/wireless.png",
+      "portImg" : "port_icons/antenna.png",
+      "animationType" : "Fade",
+      "symbol" : "*",
+      "numSpread" : 50,
+      "subPopulationSpread" : [
+        {
+          "type" : "Potential",
+          "pointsWorth" : 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "antagonist": {
+    "trackedPopulations": [
+      "Infected",
+      "Dead"
+    ],
+    "startingProgress": 0.0
+  }
+}

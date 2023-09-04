@@ -1,0 +1,188 @@
+{
+  "_comment": "Updated protagonist types json. Explicitly states what core protag values are expected for this set of options and splits up base effectiveness for different factors into clearly defined categories for simpler validation and object creation.",
+  "protagonistTypes": {
+    "expectedCoreFactors": [
+      "Activity",
+      "Lethality",
+      "Viciousness"
+    ],
+    "protagonistOptions": [
+      {
+        "id": 0,
+        "name": "Vampires",
+        "description": "Creatures of the night, with a thirst for blood...",
+        "image": "/protagonist_icons/vampire.png",
+        "Core": [
+          {
+            "name": "Activity",
+            "amount": 0.1
+          },
+          {
+            "name": "Lethality",
+            "amount": 0.05
+          },
+          {
+            "name": "Viciousness",
+            "amount": 0.5
+          }
+        ],
+        "Region": [
+          {
+            "type": "Garlic Supply",
+            "factors": [
+              {
+                "name": "High",
+                "amount": 0.5
+              },
+              {
+                "name": "Low",
+                "amount": 1.0
+              }
+            ]
+          },
+          {
+            "type": "Climate",
+            "factors": [
+              {
+                "name": "Sunny",
+                "amount": 0.6
+              },
+              {
+                "name": "Shady",
+                "amount": 1.2
+              }
+            ]
+          },
+          {
+            "type": "Density",
+            "factors": [
+              {
+                "name": "Rural",
+                "amount": 0.9
+              },
+              {
+                "name": "Urban",
+                "amount": 1.2
+              }
+            ]
+          },
+          {
+            "type": "Weapons",
+            "factors": [
+              {
+                "name": "Armed",
+                "amount": 0.3
+              },
+              {
+                "name": "Defenseless",
+                "amount": 1.4
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 1.0
+          },
+          {
+            "name": "Air",
+            "amount": 0.5
+          },
+          {
+            "name": "Sea",
+            "amount": 0.5
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Zombies",
+        "description": "Brains...",
+        "image": "/protagonist_icons/zombie.png",
+        "Core": [
+          {
+            "name": "Activity",
+            "amount": 0.25
+          },
+          {
+            "name": "Lethality",
+            "amount": 0.1
+          },
+          {
+            "name": "Viciousness",
+            "amount": 0.64
+          }
+        ],
+        "Region": [
+          {
+            "type": "Garlic Supply",
+            "factors": [
+              {
+                "name": "High",
+                "amount": 1.0
+              },
+              {
+                "name": "Low",
+                "amount": 1.0
+              }
+            ]
+          },
+          {
+            "type": "Climate",
+            "factors": [
+              {
+                "name": "Sunny",
+                "amount": 0.5
+              },
+              {
+                "name": "Shady",
+                "amount": 1.2
+              }
+            ]
+          },
+          {
+            "type": "Density",
+            "factors": [
+              {
+                "name": "Rural",
+                "amount": 0.8
+              },
+              {
+                "name": "Urban",
+                "amount": 0.8
+              }
+            ]
+          },
+          {
+            "type": "Weapons",
+            "factors": [
+              {
+                "name": "Armed",
+                "amount": 0.5
+              },
+              {
+                "name": "Defenseless",
+                "amount": 1.2
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 0.2
+          },
+          {
+            "name": "Air",
+            "amount": 0.05
+          },
+          {
+            "name": "Sea",
+            "amount": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

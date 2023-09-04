@@ -1,0 +1,11 @@
+{
+  "conditions": [
+    {
+      "threshold": 9000000000,
+      "operation": "GreaterThanOperation",
+      "type": "asas",
+      "name": "Dead",
+      "message": "YOU HAVE SUCCESSFULLY KILLED EVERYONE ON THE PLANET!"
+    }
+  ]
+}

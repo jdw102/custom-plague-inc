@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "threshold": 40000,
+      "operation": "greaterThan",
+      "type": "ANTAGONIST",
+      "message": "A CURE HAS BEEN FOUND! YOUR VIRUS WILL BE ERADICATED!"
+    }
+  ]
+}

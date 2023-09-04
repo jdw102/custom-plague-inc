@@ -1,0 +1,9 @@
+{
+  "antagonist": {
+    "trackedPopulations": [
+    ],
+    "startingProgress": 0.0,
+    "maxValue": 0.0,
+    "thresholdOperation": "GreaterThanOperation"
+  }
+}

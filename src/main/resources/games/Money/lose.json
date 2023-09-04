@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "threshold": 1000,
+      "operation": "GreaterThanOperation",
+      "type": "TIME",
+      "name": "Time",
+      "message": "You failed to reach your deadline and have been fired..."
+    },
+    {
+      "threshold": 0,
+      "operation": "LessThanOperation",
+      "type": "POPULATION",
+      "name": "Potential",
+      "message": "Your potential customer base has dropped to 0, you have been fired..."
+    }
+  ]
+}

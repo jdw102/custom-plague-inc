@@ -1,0 +1,20 @@
+{
+  "groups":[
+    {
+      "id": 0,
+      "name": "Marketability"
+    },
+    {
+      "id": 1,
+      "name": "Events"
+    },
+    {
+      "id": 2,
+      "name": "Price"
+    },
+    {
+      "id": 3,
+      "name": "Quality"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "defaultOperation": "NormalOperation",
+  "acceptedOperations": ["NormalOperation", "ComplementOperation"],
+  "defaultPopulation": "Healthy",
+  "targetPopulations": [
+    {
+      "name": "Infected",
+      "source": "Healthy",
+      "drain": "Dead",
+      "growthFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Infectivity",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Climate",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Wealth",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Density",
+          "operation": "NormalOperation"
+        }
+      ],
+      "sourceFactors" : [],
+      "drainFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Lethality",
+          "operation": "NormalOperation"
+        }
+      ]
+    }
+  ]
+}

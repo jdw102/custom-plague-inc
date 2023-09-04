@@ -1,0 +1,135 @@
+{
+  "_comment" : "Example code for setting up perks. Type corresponds to which protagonists defined in protagonistTypes  json this is available for. Cost describes how many userpoints it costs. prereqIDs describe what previous perks need to be unlocked for this perk to be available--if this is empty, the perk is available by default. factorsModified describes any of the possible factors this perk might add and the impact (+ this amount) it will contribute. Cure complexity is not something defined in protagonist types--it is default 100 and is used as the total value that \"antagonist\" must reach, so perks that modify this will just add to this total value.",
+  "perks": [
+    {
+      "id": 1,
+      "group": 0,
+      "name": "Plausibility 1",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Leak more context that increases the believability of your slander, causing it to spread faster.",
+      "cost" : 10,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Plausibility",
+          "effect" : 0.1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": 0,
+      "name": "Plausibility 2",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Leak more context that increases the believability of your slander, causing it to spread faster.",
+      "cost" : 25,
+      "prereqID" : [1],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Plausibility",
+          "effect" : 0.1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "group": 0,
+      "name": "Plausibility 3",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Leak more context that increases the believability of your slander, causing it to spread faster.",
+      "cost" : 50,
+      "prereqID" : [2],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Plausibility",
+          "effect" : 0.1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "group": 1,
+      "name": "Just For Laughs 1",
+      "imagePath": "perks_icons/laughing.png",
+      "description" : "Leak context that makes your slander all the more funnier, increasing the media points received as it spreads.",
+      "cost" : 5,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Comedy",
+          "effect" : 0.5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "group": 1,
+      "name": "Just For Laughs 2",
+      "imagePath": "perks_icons/laughing.png",
+      "description" : "Leak more context that makes your slander all the more funnier, increasing the media points received as it spreads.",
+      "cost" : 20,
+      "prereqID" : [10],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Comedy",
+          "effect" : 0.5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "group": 1,
+      "name": "Just For Laughs 3",
+      "imagePath": "perks_icons/laughing.png",
+      "description" : "Leak context that makes your slander all the more funnier, increasing the media points received as it spreads.",
+      "cost" : 40,
+      "prereqID" : [11],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Comedy",
+          "effect" : 0.5
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "group": 2,
+      "name": "Pay Off Authorities 1",
+      "actorName": "Antagonist",
+      "imagePath": "perks_icons/handshake.png",
+      "description" : "Make a shady deal with nation's governments slowing down the authorities' investigation in countries with corrupt governments.",
+      "cost" : 25,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Corruption",
+          "name": "High",
+          "effect" : -0.3
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "group": 2,
+      "name": "Pay Off Authorities 2",
+      "actorName": "Antagonist",
+      "imagePath": "perks_icons/handshake.png",
+      "description" : "Pay more money to corrupt governments, slowing down the authorities' investigation in countries with corrupt governments.",
+      "cost" : 50,
+      "prereqID" : [20],
+      "factorsModified" : [
+        {
+          "factor" : "Corruption",
+          "name": "High",
+          "effect" : -0.3
+        }
+      ]
+    }
+  ]
+}

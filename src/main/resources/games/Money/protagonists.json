@@ -1,0 +1,162 @@
+{
+  "_comment": "Updated protagonist types json. Explicitly states what core protag values are expected for this set of options and splits up base effectiveness for different factors into clearly defined categories for simpler validation and object creation.",
+  "protagonistTypes": {
+    "expectedCoreFactors": [
+      "Price",
+      "Marketability",
+      "Quality"
+    ],
+    "protagonistOptions": [
+      {
+        "id": 0,
+        "name": "Strange Device",
+        "description": "A strange device, limitless possibilities!",
+        "image": "/protagonist_icons/yoyo.png",
+        "Core": [
+          {
+            "name": "Price",
+            "amount": 5.00
+          },
+          {
+            "name": "Marketability",
+            "amount": 0.02
+          },
+          {
+            "name": "Quality",
+            "amount": 0.1
+          }
+        ],
+        "Path": [
+          {
+            "name": "Word of Mouth",
+            "amount": 2.0
+          },
+          {
+            "name": "Internet",
+            "amount": 1.0
+          },
+          {
+            "name": "TV",
+            "amount": 1.0
+          }
+        ],
+        "Region": [
+          {
+            "type": "Market",
+            "factors": [
+              {
+                "name": "Free",
+                "amount": 1.5
+              },
+              {
+                "name": "Command",
+                "amount": 0.5
+              }
+            ]
+          },
+          {
+            "type": "Government",
+            "factors": [
+              {
+                "name": "Democratic",
+                "amount": 1.5
+              },
+              {
+                "name": "Authoritarian",
+                "amount": 0.5
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 1.5
+              },
+              {
+                "name": "Poor",
+                "amount": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Unnecessary App",
+        "description": "An app that no one asked for but everyone needs!",
+        "image": "/protagonist_icons/smartphone.png",
+        "Core": [
+          {
+            "name": "Price",
+            "amount": 0.99
+          },
+          {
+            "name": "Marketability",
+            "amount": 0.04
+          },
+          {
+            "name": "Quality",
+            "amount": 0.15
+          }
+        ],
+        "Path": [
+          {
+            "name": "Word of Mouth",
+            "amount": 0.5
+          },
+          {
+            "name": "Internet",
+            "amount": 2.0
+          },
+          {
+            "name": "TV",
+            "amount": 1.0
+          }
+        ],
+        "Region": [
+          {
+            "type": "Market",
+            "factors": [
+              {
+                "name": "Free",
+                "amount": 1.5
+              },
+              {
+                "name": "Command",
+                "amount": 0.5
+              }
+            ]
+          },
+          {
+            "type": "Government",
+            "factors": [
+              {
+                "name": "Democratic",
+                "amount": 1.5
+              },
+              {
+                "name": "Authoritarian",
+                "amount": 0.5
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 1.5
+              },
+              {
+                "name": "Poor",
+                "amount": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

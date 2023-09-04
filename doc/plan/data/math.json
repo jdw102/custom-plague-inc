@@ -1,0 +1,25 @@
+{
+  "_comment" : "Example file for setting up math. Populations defines the subgroups of the populations and what factors matter for the calculations of these, and userPoints defines whatever points the user will use to buy perks and how the probability of generating additional points will be calculated and what factors this depends on",
+  "math": {
+    "defaultPopulation" : "Healthy",
+    "populations" : [
+      {
+        "name" : "Infected",
+        "sourcePop" : "Healthy",
+        "protagonistFactors" : ["infectivity"],
+        "regionFactors" : ["climate", "temperature", "wealth", "populationDensity"]
+      },
+      {
+        "name" : "Dead",
+        "sourcePop" : "Infected",
+        "protagonistFactors" : ["severity", "lethality"],
+        "regionFactors" : []
+      }
+    ],
+    "userPoints" : {
+      "name" : "DNA Points",
+      "populationParameters" : ["Infected", "Dead"],
+      "protagonistParameters" : ["severity"]
+    }
+  }
+}

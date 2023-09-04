@@ -1,0 +1,27 @@
+.start-screen{
+    -fx-background-image: url("../images/plague-start.png");
+    -fx-background-size: cover, auto ;
+}
+.optionButtons{
+    -fx-spacing: 30px;
+    -fx-font-family: Stencil;
+    -fx-font-size: 48pt;
+    -fx-text-fill: #4d0a0a;
+    -fx-max-height: 120px;
+    -fx-min-width: 500px;
+    -fx-max-width: 500px;
+    -fx-min-height: 120px;
+    -fx-effect: dropshadow(gaussian, #383636, 10, 0.5, 5, 5);
+}
+
+.settingsButton{
+    -fx-background-image: url("../images/settings-icon-14962.png");
+    -fx-background-size: cover, auto;
+    -fx-max-width: 70px;
+    -fx-max-height: 70px;
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+}
+
+.settingsPopUp{
+}

@@ -1,0 +1,76 @@
+{
+  "regionFactorTypes": [
+    {
+      "name": "Climate",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Sunny",
+          "antagonistBaseEffectiveness": 0.8
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Shady",
+          "antagonistBaseEffectiveness": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Garlic Supply",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Low",
+          "antagonistBaseEffectiveness": 0.75
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "High",
+          "antagonistBaseEffectiveness": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Weapons",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Armed",
+          "antagonistBaseEffectiveness": 0.5
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Defenseless",
+          "antagonistBaseEffectiveness": 2.0
+        }
+      ]
+    },
+    {
+      "name": "Density",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Rural",
+          "antagonistBaseEffectiveness": 0.5
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Urban",
+          "antagonistBaseEffectiveness": 2.0
+        }
+      ]
+    }
+  ]
+}

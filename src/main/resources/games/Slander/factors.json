@@ -1,0 +1,76 @@
+{
+  "regionFactorTypes": [
+    {
+      "name": "Corruption",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "High",
+          "antagonistBaseEffectiveness": 0.5
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Low",
+          "antagonistBaseEffectiveness": 2.0
+        }
+      ]
+    },
+    {
+      "name": "Government",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Democratic",
+          "antagonistBaseEffectiveness": 1.5
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Authoritarian",
+          "antagonistBaseEffectiveness": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Wealth",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "Poor",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Rich",
+          "antagonistBaseEffectiveness": 2.0
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "defaultLevel": "Normal",
+      "values": [
+        {
+          "level": "High",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Normal",
+          "antagonistBaseEffectiveness": 1.0
+        },
+        {
+          "level": "Low",
+          "antagonistBaseEffectiveness": 1.0
+        }
+      ]
+    }
+  ]
+}

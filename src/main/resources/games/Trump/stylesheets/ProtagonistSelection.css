@@ -1,0 +1,44 @@
+.protagonist-screen {
+  -fx-background-image: url("../../../images/blue-tech.jpg");
+  -fx-background-size: cover, auto ;
+  -fx-padding: 50;
+}
+
+.start-button {
+  -fx-font-size: 24pt;
+  -fx-font-family: Stencil;
+  -fx-pref-width: 200px;
+  -fx-effect: dropshadow(gaussian, #3f3e3e, 10, 0.5, 5, 5);
+  -fx-alignment: bottom-center;
+}
+
+.protagonist-combo-box {
+  -fx-font-size: 25pt;
+  -fx-font-family: Stencil;
+  -fx-spacing: 50px;
+  -fx-pref-height: 80px;
+}
+
+.protagonist-combo-box-content{
+  -fx-alignment: center;
+  -fx-padding: 10 pt;
+  -fx-background-color: #ad7878;
+}
+
+.protagonist-name-field {
+  -fx-max-height: 50px;
+  -fx-max-width: 260px;
+}
+.protagonist-selector {
+  -fx-padding: 30;
+}
+
+.progress-bar-box {
+  -fx-alignment: center;
+  -fx-spacing: 10;
+}
+
+.protagonist-progress-bar {
+  -fx-accent: #ef3131;
+}
+

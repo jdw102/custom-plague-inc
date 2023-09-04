@@ -1,0 +1,22 @@
+{
+  "spreadablePopulations": [
+    {
+      "name": "Aware",
+      "alternatePopulation": "Normal",
+      "operation": "NormalOperation",
+      "startAmt": 1
+    },
+    {
+      "name": "Informed",
+      "alternatePopulation": "Normal",
+      "operation": "NormalOperation",
+      "startAmt": 0
+    },
+    {
+      "name": "Deceived",
+      "alternatePopulation": "Normal",
+      "operation": "NormalOperation",
+      "startAmt": 0
+    }
+  ]
+}

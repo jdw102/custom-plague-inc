@@ -1,0 +1,56 @@
+{
+  "perksRequirements" : [
+    "type",
+    "id",
+    "name",
+    "description",
+    "cost",
+    "prereqID",
+    "factorsModified"
+  ],
+
+  "conditionsRequirements": [
+    {
+      "winConditions": [
+        "message",
+        "parameter",
+        "threshold",
+        "operator"
+      ],
+      "loseConditions": [
+        "message",
+        "parameter",
+        "threshold",
+        "operator"
+      ]
+    }
+  ],
+
+  "pathsRequirements": [
+    "id",
+    "name",
+    "protagonistBaseEffectivity",
+    "subpopulationSpread",
+    "pointsWorth"
+  ],
+
+  "protagonistRequirements": [
+    "name",
+    {
+      "factors" : [
+        "name",
+        "amount"
+      ]
+    }
+  ],
+
+  "regionFactorRequirements": [
+    "name",
+    "defaultLevel",
+    {
+      "values" : [
+        "level"
+      ]
+    }
+  ]
+}

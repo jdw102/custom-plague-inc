@@ -1,0 +1,100 @@
+{
+  "_comment": "Updated protagonist types json. Explicitly states what core protag values are expected for this set of options and splits up base effectiveness for different factors into clearly defined categories for simpler validation and object creation.",
+  "protagonistTypes": {
+    "expectedCoreFactors": [
+      "Virality",
+      "Plausibility",
+      "Comedy"
+    ],
+    "protagonistOptions": [
+      {
+        "id": 0,
+        "name": "Donald Trump",
+        "description": "The greatest president, better than Lincoln, better than Washington.",
+        "image": "/protagonist_icons/trump.jpg",
+        "Core": [
+          {
+            "name": "Virality",
+            "amount": 0.05
+          },
+          {
+            "name": "Plausibility",
+            "amount": 0.0
+          },
+          {
+            "name": "Comedy",
+            "amount": 0.9
+          }
+        ],
+        "Path": [
+          {
+            "name": "Word of Mouth",
+            "amount": 1.3
+          },
+          {
+            "name": "Internet",
+            "amount": 1.0
+          },
+          {
+            "name": "TV",
+            "amount": 1.0
+          }
+        ],
+        "Region": [
+          {
+            "type": "Corruption",
+            "factors": [
+              {
+                "name": "High",
+                "amount": 1.3
+              },
+              {
+                "name": "Low",
+                "amount": 0.9
+              }
+            ]
+          },
+          {
+            "type": "Government",
+            "factors": [
+              {
+                "name": "Democratic",
+                "amount": 1.5
+              },
+              {
+                "name": "Authoritarian",
+                "amount": 0.5
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 1.3
+              },
+              {
+                "name": "Poor",
+                "amount": 0.8
+              }
+            ]
+          },
+          {
+            "type": "Education",
+            "factors": [
+              {
+                "name": "High",
+                "amount": 0.5
+              },
+              {
+                "name": "Low",
+                "amount": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

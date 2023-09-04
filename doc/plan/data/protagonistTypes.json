@@ -1,0 +1,191 @@
+{
+  "_comment": "Updated protagonist types json. Explicitly states what core protag values are expected for this set of options and splits up base effectiveness for different factors into clearly defined categories for simpler validation and object creation.",
+  "protagonistTypes": {
+    "expectedCoreFactors": [
+      "infectivity",
+      "lethality",
+      "severity",
+      "mutation"
+    ],
+    "protagonistOptions": [
+      {
+        "name": "bacteria",
+        "Core": [
+          {
+            "name": "infectivity",
+            "amount": 0.2
+          },
+          {
+            "name": "lethality",
+            "amount": 0.1
+          },
+          {
+            "name": "severity",
+            "amount": 0.15
+          },
+          {
+            "name": "mutation",
+            "amount": 0.05
+          }
+        ],
+        "Region": [
+          {
+            "type": "temperature",
+            "factors": [
+              {
+                "name": "cold",
+                "amount": 0.12
+              },
+              {
+                "name": "hot",
+                "amount": 0.13
+              }
+            ]
+          },
+          {
+            "type": "climate",
+            "factors": [
+              {
+                "name": "arid",
+                "amount": 0.32
+              },
+              {
+                "name": "humid",
+                "amount": 0.22
+              }
+            ]
+          },
+          {
+            "type": "populationDensity",
+            "factors": [
+              {
+                "name": "rural",
+                "amount": 0.18
+              },
+              {
+                "name": "urban",
+                "amount": 1.1
+              }
+            ]
+          },
+          {
+            "type": "wealth",
+            "factors": [
+              {
+                "name": "rich",
+                "amount": 0.14
+              },
+              {
+                "name": "poor",
+                "amount": 1.15
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 0.54
+          },
+          {
+            "name": "Air",
+            "amount": 0.45
+          },
+          {
+            "name": "Sea",
+            "amount": 0.32
+          }
+        ]
+      },
+      {
+        "name": "virus",
+        "Core": [
+          {
+            "name": "infectivity",
+            "amount": 0.45
+          },
+          {
+            "name": "lethality",
+            "amount": 0.23
+          },
+          {
+            "name": "severity",
+            "amount": 0.64
+          },
+          {
+            "name": "mutation",
+            "amount": 0.18
+          }
+        ],
+        "Region": [
+          {
+            "type": "temperature",
+            "factors": [
+              {
+                "name": "cold",
+                "amount": 0.32
+              },
+              {
+                "name": "hot",
+                "amount": 0.24
+              }
+            ]
+          },
+          {
+            "type": "climate",
+            "factors": [
+              {
+                "name": "arid",
+                "amount": 0.65
+              },
+              {
+                "name": "humid",
+                "amount": 0.53
+              }
+            ]
+          },
+          {
+            "type": "populationDensity",
+            "factors": [
+              {
+                "name": "rural",
+                "amount": 0.42
+              },
+              {
+                "name": "urban",
+                "amount": 1.43
+              }
+            ]
+          },
+          {
+            "type": "wealth",
+            "factors": [
+              {
+                "name": "rich",
+                "amount": 0.55
+              },
+              {
+                "name": "poor",
+                "amount": 1.76
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 0.57
+          },
+          {
+            "name": "Air",
+            "amount": 0.34
+          },
+          {
+            "name": "Sea",
+            "amount": 0.41
+          }
+        ]
+      }
+    ]
+  }
+}

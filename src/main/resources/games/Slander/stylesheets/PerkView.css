@@ -1,0 +1,102 @@
+.root {
+    -fx-background-color: #4d024c;
+}
+.hexButton{
+    -fx-background-radius: 5em;
+    -fx-background-position: center;
+    -fx-min-height: 70px;
+    -fx-max-height: 70px;
+    -fx-min-width: 70px;
+    -fx-max-height: 70px;
+}
+
+.tab-content {
+    -fx-border-radius: 50;
+}
+
+.perk-view{
+    -fx-background-color: #4d024c;
+}
+
+.info-view {
+    -fx-background-color: #4d4545;
+    -fx-padding: 30;
+    -fx-spacing: 250;
+    -fx-alignment: center;
+    -fx-border-radius: 10;
+    -fx-start-margin: 30;
+    -fx-end-margin: 30;
+}
+
+.labels {
+    -fx-text-fill: white;
+    -fx-font-size: 24pt;
+    -fx-font-family: Stencil;
+    -fx-alignment: center;
+}
+
+.perk-tree-borderpane {
+    -fx-background-color: #f5dddd;
+    -fx-pref-width: 500;
+    -fx-pref-height: 300;
+}
+
+.perk-text-area:disabled {
+    -fx-font-family: Stencil;
+    -fx-font-size: 16;
+    -fx-opacity: 1.0;
+    -fx-max-width: 400;
+    -fx-max-height: 200;
+}
+
+.perk-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24pt;
+    -fx-font-family: Stencil;
+    -fx-alignment: center;
+}
+
+.cost:disabled {
+    --fx-text-fill: #000000;
+    -fx-font-size: 12pt;
+    -fx-font-family: Stencil;
+    -fx-alignment: center;
+    -fx-max-width: 200;
+    -fx-opacity: 1.0;
+}
+
+.protagonist-progress-bar {
+    -fx-pref-width: 100;
+    -fx-pref-height: 20;
+    -fx-accent: #ef3131;
+}
+
+.progress-bar-box {
+    -fx-spacing: 50;
+    -fx-alignment: center;
+}
+.perk-bottom-box {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+.perk-box {
+    -fx-alignment: center;
+    -fx-background-color: #4d4545;
+    -fx-border-radius: 10;
+    -fx-spacing: 10;
+    -fx-start-margin: 30;
+    -fx-end-margin: 30;
+}
+
+.buy-button {
+    -fx-font-size: 18pt;
+    -fx-font-family: Stencil;
+    -fx-pref-width: 200px;
+    -fx-effect: dropshadow(gaussian, #3f3e3e, 10, 0.5, 5, 5);
+    -fx-alignment: bottom-center;
+}
+
+.protagonist-box {
+    -fx-spacing: 10;
+}
+

@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "threshold": 500000000,
+      "operation": "GreaterThanOperation",
+      "type": "POPULATION",
+      "name": "Informed",
+      "message": "Half of the global population has been informed, you have lost..."
+    },
+    {
+      "threshold": 10000000,
+      "operation": "GreaterThanOperation",
+      "type": "ANTAGONIST",
+      "name": "Antagonist",
+      "message": "The authorities have arrested you for libel, you have lost..."
+    }
+  ]
+}

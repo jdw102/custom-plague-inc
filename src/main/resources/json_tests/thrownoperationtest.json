@@ -1,0 +1,34 @@
+{
+  "defaultOperation": "NormalOperation",
+  "acceptedOperations": ["NormalOperation", "ComplementOperation"],
+  "defaultPopulation": "Healthy",
+  "targetPopulations": [
+    {
+      "name": "Infected",
+      "source": "Healthy",
+      "drains": [
+        {
+          "name": "Dead",
+          "operation": "SumOperation",
+          "factors": [
+            {
+              "type": "CoreFactor",
+              "name": "Lethality",
+              "operation": "NormalOperation"
+            }
+          ]
+        }
+      ],
+      "growthFactorsOperation": "MultiplyOperation",
+      "sourceFactorsOperation": "dasasd",
+      "growthFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Infectivity",
+          "operation": "NormalOperation"
+        }
+      ],
+      "sourceFactors" : []
+    }
+  ]
+}

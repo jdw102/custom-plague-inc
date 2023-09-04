@@ -1,0 +1,16 @@
+{
+  "spreadablePopulations": [
+    {
+      "name": "Potential",
+      "alternatePopulation": "Normal",
+      "operation": "NormalOperation",
+      "startAmt": 1
+    },
+    {
+      "name": "Customer",
+      "alternatePopulation": "Normal",
+      "operation": "NormalOperation",
+      "startAmt": 0
+    }
+  ]
+}

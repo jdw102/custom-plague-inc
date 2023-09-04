@@ -1,0 +1,60 @@
+{
+  "defaultOperation": "NormalOperation",
+  "acceptedOperations": ["NormalOperation", "ComplementOperation"],
+  "defaultPopulation": "Normal",
+  "populations": ["Potential", "Normal", "Customer"],
+  "targetPopulations": [
+    {
+      "name": "Potential",
+      "source": "Normal",
+      "drains": [
+        {
+          "name": "Customer",
+          "operation": "MultiplyOperation",
+          "factors": [
+            {
+              "type": "CoreFactor",
+              "name": "Quality",
+              "operation": "NormalOperation"
+            },
+            {
+              "type": "CoreFactor",
+              "name": "Price",
+              "operation": "InverseOperation"
+            },
+            {
+              "type": "RegionFactor",
+              "name": "Interest",
+              "operation": "NormalOperation"
+            },
+            {
+              "type": "RegionFactor",
+              "name": "Wealth",
+              "operation": "NormalOperation"
+            }
+          ]
+        }
+      ],
+      "growthFactorsOperation": "MultiplyOperation",
+      "sourceFactorsOperation": "SumOperation",
+      "growthFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Marketability",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Market",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Government",
+          "operation": "NormalOperation"
+        }
+      ],
+      "sourceFactors": []
+    }
+  ]
+}

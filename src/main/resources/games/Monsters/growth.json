@@ -1,0 +1,50 @@
+{
+  "defaultOperation": "NormalOperation",
+  "populations": ["Healthy", "Transformed", "Dead"],
+  "acceptedOperations": ["NormalOperation", "ComplementOperation"],
+  "defaultPopulation": "Healthy",
+  "targetPopulations": [
+    {
+      "name": "Transformed",
+      "source": "Healthy",
+      "drains": [
+        {
+          "name": "Dead",
+          "operation": "SumOperation",
+          "factors": [
+            {
+              "type": "CoreFactor",
+              "name": "Lethality",
+              "operation": "NormalOperation"
+            }
+          ]
+        }
+      ],
+      "growthFactorsOperation": "MultiplyOperation",
+      "sourceFactorsOperation": "SumOperation",
+      "growthFactors": [
+        {
+          "type": "CoreFactor",
+          "name": "Activity",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Garlic Supply",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Weapons",
+          "operation": "NormalOperation"
+        },
+        {
+          "type": "RegionFactor",
+          "name": "Density",
+          "operation": "NormalOperation"
+        }
+      ],
+      "sourceFactors" : []
+    }
+  ]
+}

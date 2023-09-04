@@ -1,0 +1,35 @@
+{
+  "events":{
+    "randomEvents":
+    [
+      {
+        "regionIds": [5],
+        "probability": 0.005,
+        "sourcePop": "Normal",
+        "drainPop": "Customer",
+        "amount": 0,
+        "factor": "Government",
+        "level": "Democratic",
+        "message": "There has been a coup in Eurasia!"
+      }
+    ],
+    "perkEvents":
+    [
+      {
+        "id": 20,
+        "groupId": 1,
+        "regionIds": [1, 2, 3],
+        "name" : "Better Marketability",
+        "imagePath": "perks_icons/pop-up.png",
+        "description" : "Launch a brief TV campaign in Western Europe.",
+        "cost" : 1000000,
+        "preReqIDs" : [],
+        "sourcePop": "Normal",
+        "drainPop": "Potential",
+        "amount": 300000,
+        "factor": "Government",
+        "level": "Democratic"
+      }
+    ]
+  }
+}

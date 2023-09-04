@@ -1,0 +1,60 @@
+{
+  "events":{
+    "randomEvents":
+        [
+          {
+            "regionIds": [5],
+            "probability": 0.005,
+            "sourcePop": "Normal",
+            "drainPop": "Customer",
+            "amount": 0,
+            "factor": "Government",
+            "level": "Democratic",
+            "message": "There has been a coup in Eurasia!"
+          },
+          {
+            "regionIds": [1],
+            "probability": 0.005,
+            "sourcePop": "Potential",
+            "drainPop": "Normal",
+            "amount": 20000,
+            "factor": "Interest",
+            "level": "Low",
+            "message": "Someone in the UK claims to have been seriously injured using your product! There is a public outrage!"
+          }
+        ],
+    "perkEvents":
+        [
+          {
+            "id": 20,
+            "groupId": 1,
+            "regionIds": [1, 2, 3],
+            "name" : "Small TV Campaign",
+            "imagePath": "perks_icons/tv.png",
+            "description" : "Launch a brief TV campaign in Western Europe that will attract potential customers.",
+            "cost" : 10000,
+            "preReqIDs" : [],
+            "sourcePop": "Normal",
+            "drainPop": "Potential",
+            "amount": 30000,
+            "factor": "Government",
+            "level": "Democratic"
+          },
+          {
+            "id": 21,
+            "groupId": 1,
+            "regionIds": [5],
+            "name": "Factory 1",
+            "imagePath": "perks_icons/factory.png",
+            "description": "Build a factory in Eurasia.",
+            "cost": 5000000,
+            "preReqIDs": [],
+            "sourcePop": "Normal",
+            "drainPop": "Potential",
+            "amount": 200000,
+            "factor": "Market",
+            "level": "Normal"
+          }
+        ]
+  }
+}

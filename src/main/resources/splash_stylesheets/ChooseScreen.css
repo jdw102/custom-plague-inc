@@ -1,0 +1,54 @@
+.splash-screen {
+  -fx-background-image: url("../images/plague-start.png");
+  -fx-background-size: cover, auto ;
+}
+
+.gamedropdown{
+  -fx-font-size: 25pt;
+  -fx-font-family: Stencil;
+  -fx-alignment: bottom;
+  -fx-spacing: 80px;
+  -fx-pref-height: 80px;
+}
+
+.gamedropdown-content{
+  -fx-alignment: center;
+  -fx-padding: 10 pt;
+  -fx-background-color: #ad7878;
+}
+
+.gamedropdown:hover{
+  -fx-background-color: #e38d8d;
+  -fx-text-fill: white;
+}
+
+.languagedropdown{
+  -fx-font-family: Stencil;
+  -fx-font-size: 25 pt;
+  -fx-alignment: bottom;
+  -fx-spacing: 80px;
+  -fx-pref-height: 80px;
+}
+
+.languagedropdown-content{
+  -fx-alignment: center;
+}
+
+.languagedropdown:hover{
+  -fx-alignment: center;
+  -fx-background-color: #e38d8d;
+  -fx-text-fill: white;
+}
+
+.dropdownBox{
+  -fx-padding: 100;
+  -fx-spacing: 30px;
+  -fx-alignment: center;
+}
+
+.transitionButton{
+  -fx-font-size: 24pt;
+  -fx-font-family: Stencil;
+  -fx-pref-width: 200px;
+  -fx-effect: dropshadow(gaussian, #3f3e3e, 10, 0.5, 5, 5);
+}

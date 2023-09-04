@@ -1,0 +1,23 @@
+{
+  "pointsParameters": {
+    "pointsOperation": "DefaultPointsOperation",
+    "growthFactorsOperation": "SumOperation",
+    "spreadFactorsOperation": "SumOperation",
+    "populations": [
+      "Aware",
+      "Deceived"
+    ],
+    "growthFactors": [
+      {
+        "type": "CoreFactor",
+        "name": "Comedy",
+        "operation": "NormalOperation"
+      }
+    ],
+    "spreadFactors": [
+
+    ],
+    "maxPoints": 100,
+    "startPoints": 0
+  }
+}

@@ -1,0 +1,45 @@
+.chart {
+  -fx-legend-side: left;
+  -fx-create-symbols: false;
+  -fx-pref-height: 500;
+  -fx-pref-width: 750;
+}
+
+.chart-legend {
+  -fx-font-size: 16px;
+}
+
+.chart-title {
+  -fx-text-fill: #000;
+  -fx-font-size: 36px;
+  -fx-stroke-width: 4px;
+  -fx-alignment: center;
+}
+
+.chart-vertical-grid-lines {
+  -fx-stroke: #ccc;
+  -fx-stroke-width: 1px;
+}
+.chart-horizontal-grid-lines {
+  -fx-stroke: #ccc;
+  -fx-stroke-width: 1px;
+}
+
+.axis {
+  -fx-stroke: #000;
+  -fx-stroke-width: 2;
+  -fx-tick-label-fill: #000;
+}
+
+.axis-tick-mark {
+  -fx-stroke: #000;
+  -fx-stroke-width: 1;
+}
+.axis-minor-tick-mark {
+  -fx-minor-tick-visible: false;
+}
+
+.axis-label {
+  -fx-text-fill: #000;
+  -fx-font-size: 20px;
+}

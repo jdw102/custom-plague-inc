@@ -1,0 +1,196 @@
+{
+  "_comment" : "Example code for setting up perks. Type corresponds to which protagonists defined in protagonistTypes  json this is available for. Cost describes how many userpoints it costs. prereqIDs describe what previous perks need to be unlocked for this perk to be available--if this is empty, the perk is available by default. factorsModified describes any of the possible factors this perk might add and the impact (+ this amount) it will contribute. Cure complexity is not something defined in protagonist types--it is default 100 and is used as the total value that \"antagonist\" must reach, so perks that modify this will just add to this total value.",
+  "perks": [
+    {
+      "id" : 1,
+      "group": 0,
+      "name" : "Focus Groups 1",
+      "imagePath": "perks_icons/focus-group.png",
+      "description" : "Increase the marketability of your product by receiving feedback from a focus group.",
+      "cost" : 100000,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Marketability",
+          "effect" : 0.03
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "group": 0,
+      "name" : "Focus Groups 2",
+      "imagePath": "perks_icons/focus-group.png",
+      "description" : "Increase the marketability of your product by receiving feedback from a focus group. Also increases effectiveness of internet marketing.",
+      "cost" : 250000,
+      "prereqID" : [1],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Marketability",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name": "Internet",
+          "effect": 0.03
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "group": 0,
+      "name" : "Focus Groups 3",
+      "imagePath": "perks_icons/focus-group.png",
+      "description" : "Increase the marketability of your product by receiving feedback from a focus group. Increases TV ad effectiveness and marketability in lower interest countries.",
+      "cost" : 1000000,
+      "prereqID" : [2],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Marketability",
+          "effect" : 0.03
+        },
+        {
+          "factor": "Path",
+          "name": "TV",
+          "effect": 0.03
+        },
+        {
+          "factor": "Interest",
+          "name": "Low",
+          "effect": 0.04
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "group": 0,
+      "name" : "Command Economies",
+      "imagePath": "perks_icons/handshake.png",
+      "description" : "Increase the marketability of your product in countries with command economies by making a shady deal with their governments.",
+      "cost" : 3000000,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Market",
+          "name": "Command",
+          "effect" : 0.5
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "group": 2,
+      "name": "Price Increase",
+      "imagePath": "perks_icons/dollar.png",
+      "description" : "Raise the price of your product by $5",
+      "cost" : 0,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Price",
+          "effect" : 5
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "group": 2,
+      "name": "Price Increase",
+      "imagePath": "perks_icons/dollar.png",
+      "description" : "Raise the price of your product by $5",
+      "cost" : 0,
+      "prereqID" : [50],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Price",
+          "effect" : 5
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "group": 2,
+      "name": "Price Increase",
+      "imagePath": "perks_icons/dollar.png",
+      "description" : "Raise the price of your product by $10",
+      "cost" : 0,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Price",
+          "effect" : 10
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "group": 2,
+      "name": "Price Increase",
+      "imagePath": "perks_icons/dollar.png",
+      "description" : "Raise the price of your product by $10",
+      "cost" : 0,
+      "prereqID" : [51],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Price",
+          "effect" : 10
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "group": 3,
+      "name": "Quality Assurance 1",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Gather your best scientists and to increase the quality of your product, making people more likely to purchase it.",
+      "cost" : 10000,
+      "prereqID" : [],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Quality",
+          "effect" : 0.05
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "group": 3,
+      "name": "Quality Assurance 2",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Gather your best scientists and to increase the quality of your product, making people more likely to purchase it.",
+      "cost" : 100000,
+      "prereqID" : [60],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Quality",
+          "effect" : 0.05
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "group": 3,
+      "name": "Quality Assurance 3",
+      "imagePath": "perks_icons/research.png",
+      "description" : "Gather your best scientists and to increase the quality of your product, making people more likely to purchase it.",
+      "cost" : 500000,
+      "prereqID" : [61],
+      "factorsModified" : [
+        {
+          "factor" : "Core",
+          "name": "Quality",
+          "effect" : 0.05
+        }
+      ]
+    }
+  ]
+}

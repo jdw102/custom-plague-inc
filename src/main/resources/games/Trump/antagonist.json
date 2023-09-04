@@ -1,0 +1,10 @@
+{
+  "antagonist": {
+    "trackedPopulations": [
+      "Deceived"
+    ],
+    "startingProgress": 0.0,
+    "maxValue": 1000000,
+    "thresholdOperation": "GreaterThanOperation"
+  }
+}

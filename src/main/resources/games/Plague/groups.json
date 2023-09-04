@@ -1,0 +1,12 @@
+{
+  "groups":[
+    {
+      "id": 0,
+      "name": "Symptoms"
+    },
+    {
+      "id": 1,
+      "name": "Upgrades"
+    }
+  ]
+}

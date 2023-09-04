@@ -1,0 +1,22 @@
+{
+  "saveData": {
+    "protagonistId": 1,
+    "protagonistName": "Jerry",
+    "antagonistProgress": 1000,
+    "regionStates": [
+      {
+        "id": 0,
+        "census": {
+          "Healthy": 200,
+          "Infected": 1,
+          "Dead": 0
+        },
+        "isOpen": true,
+        "hasAntagonist": false
+      }
+    ],
+    "unlockedPerks": [1, 2, 3],
+    "points": 50,
+    "days": 30
+  }
+}

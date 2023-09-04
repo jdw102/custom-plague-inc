@@ -1,0 +1,276 @@
+{
+  "_comment": "Updated protagonist types json. Explicitly states what core protag values are expected for this set of options and splits up base effectiveness for different factors into clearly defined categories for simpler validation and object creation.",
+  "protagonistTypes": {
+    "expectedCoreFactors": [
+      "Infectivity",
+      "Lethality",
+      "Severity"
+    ],
+    "protagonistOptions": [
+      {
+        "id": 0,
+        "name": "Bacteria",
+        "description": "Small but deadly!",
+        "image": "/protagonist_icons/bacteria.png",
+        "Core": [
+          {
+            "name": "Infectivity",
+            "amount": 0.1
+          },
+          {
+            "name": "Lethality",
+            "amount": 0.01
+          },
+          {
+            "name": "Severity",
+            "amount": 0.5
+          }
+        ],
+        "Region": [
+          {
+            "type": "Temperature",
+            "factors": [
+              {
+                "name": "Cold",
+                "amount": 0.5
+              },
+              {
+                "name": "Hot",
+                "amount": 0.7
+              }
+            ]
+          },
+          {
+            "type": "Climate",
+            "factors": [
+              {
+                "name": "Arid",
+                "amount": 0.6
+              },
+              {
+                "name": "Humid",
+                "amount": 1.2
+              }
+            ]
+          },
+          {
+            "type": "Density",
+            "factors": [
+              {
+                "name": "Rural",
+                "amount": 0.3
+              },
+              {
+                "name": "Urban",
+                "amount": 1.5
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 0.3
+              },
+              {
+                "name": "Poor",
+                "amount": 1.4
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 1.0
+          },
+          {
+            "name": "Air",
+            "amount": 0.5
+          },
+          {
+            "name": "Sea",
+            "amount": 0.5
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Virus",
+        "description": "Deadly but small!",
+        "image": "/protagonist_icons/virus.png",
+        "Core": [
+          {
+            "name": "Infectivity",
+            "amount": 0.25
+          },
+          {
+            "name": "Lethality",
+            "amount": 0.1
+          },
+          {
+            "name": "Severity",
+            "amount": 0.64
+          }
+        ],
+        "Region": [
+          {
+            "type": "Temperature",
+            "factors": [
+              {
+                "name": "Cold",
+                "amount": 0.8
+              },
+              {
+                "name": "Hot",
+                "amount": 0.8
+              }
+            ]
+          },
+          {
+            "type": "Climate",
+            "factors": [
+              {
+                "name": "Arid",
+                "amount": 0.8
+              },
+              {
+                "name": "Humid",
+                "amount": 0.8
+              }
+            ]
+          },
+          {
+            "type": "Density",
+            "factors": [
+              {
+                "name": "Rural",
+                "amount": 0.8
+              },
+              {
+                "name": "Urban",
+                "amount": 0.8
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 0.8
+              },
+              {
+                "name": "Poor",
+                "amount": 0.8
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 0.2
+          },
+          {
+            "name": "Air",
+            "amount": 0.0
+          },
+          {
+            "name": "Sea",
+            "amount": 0.0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Parasite",
+        "description": "Your deadly neighborhood parasite.",
+        "image": "/protagonist_icons/parasite.png",
+        "Core": [
+          {
+            "name": "Infectivity",
+            "amount": 1.05
+          },
+          {
+            "name": "Lethality",
+            "amount": 0.17
+          },
+          {
+            "name": "Severity",
+            "amount": 0.8
+          }
+        ],
+        "Region": [
+          {
+            "type": "Temperature",
+            "factors": [
+              {
+                "name": "Cold",
+                "amount": 0.3
+              },
+              {
+                "name": "Hot",
+                "amount": 0.9
+              }
+            ]
+          },
+          {
+            "type": "Climate",
+            "factors": [
+              {
+                "name": "Arid",
+                "amount": 0.7
+              },
+              {
+                "name": "Humid",
+                "amount": 0.9
+              }
+            ]
+          },
+          {
+            "type": "Density",
+            "factors": [
+              {
+                "name": "Rural",
+                "amount": 0.9
+              },
+              {
+                "name": "Urban",
+                "amount": 0.6
+              }
+            ]
+          },
+          {
+            "type": "Wealth",
+            "factors": [
+              {
+                "name": "Rich",
+                "amount": 0.2
+              },
+              {
+                "name": "Poor",
+                "amount": 0.95
+              }
+            ]
+          }
+        ],
+        "Path": [
+          {
+            "name": "Land",
+            "amount": 0.4
+          },
+          {
+            "name": "Air",
+            "amount": 0.0
+          },
+          {
+            "name": "Sea",
+            "amount": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "_comment" : "This is example code for setting up 4 regions. Region id must be > 0 and corresponds to the number for the region in the map txt file. Paths determine what paths exist from this region to another region (1-way) and of what type. Note that country 4 has no entry for path 2 (defined as Sea in paths.json): this means it has no seaport and the connections of type 2 to country 4 that other countries claim to have will be ignored/invalidated. Factor key and values must be valid values specified in regionFactorTypes.json or will be ignored and set to the default value specified there. Path activity, detectionThresh, and populationDensity should be doubles 0-1. Detection/Closed thresh refers to when the default population falls below that %. startingPopulation should be an integer > 0.",
+  "regions": [
+    {
+      "id": 1,
+      "name": "country 1",
+      "description": "this is country 1",
+      "paths": [{
+        "id": 1,
+        "connections": [2, 3],
+        "activity": 0.05
+      },
+        {
+          "id": 2,
+          "connections": [2, 4],
+          "activity": 0.12
+        }
+      ],
+      "factors": {
+        "climate": "arid",
+        "temperature": "hot",
+        "wealth": "normal",
+        "populationDensity": "rural"
+      },
+      "startingPopulation": 1000000,
+      "antagonistRate": 1000,
+      "detectionThresh": 0.68,
+      "closedThresh": 0.24,
+      "color" : "#34d5eb"
+    },
+    {
+      "id": 2,
+      "name": "country 2",
+      "description": "this is country 2",
+      "paths": [{
+        "id": 1,
+        "connections": [3],
+        "activity": 0.09
+      },
+        {
+          "id": 2,
+          "connections": [1, 3, 4],
+          "activity": 0.14
+        }
+      ],
+      "factors": {
+        "climate": "humid",
+        "temperature": "normal",
+        "wealth": "rich",
+        "populationDensity": "urban"
+      },
+      "startingPopulation": 2000000,
+      "antagonistRate": 3000,
+      "detectionThresh": 0.79,
+      "closedThresh": 0.19,
+      "color" : "#6b34eb"
+    },
+    {
+      "id": 3,
+      "name": "country 3",
+      "description": "this is country 3",
+      "paths": [{
+        "id": 1,
+        "connections": [1, 4],
+        "activity": 0.03
+      },
+        {
+          "id": 2,
+          "connections": [1, 2],
+          "activity": 0.32
+        }
+      ],
+      "factors": {
+        "climate": "normal",
+        "temperature": "cold",
+        "wealth": "poor",
+        "populationDensity": "normal"
+      },
+      "startingPopulation": 3000000,
+      "antagonistRate": 1000,
+      "detectionThresh": 0.68,
+      "closedThresh": 0.22,
+      "color" : "#c44da0"
+    },
+    {
+      "id": 4,
+      "name": "country 4",
+      "description": "this is country 4",
+      "paths": [{
+        "id": 1,
+        "connections": [1, 2],
+        "activity": 0.12
+      }],
+      "factors": {
+        "climate": "normal",
+        "temperature": "normal",
+        "wealth": "rich",
+        "populationDensity": "normal"
+      },
+      "startingPopulation": 4000000,
+      "antagonistRate": 1000,
+      "detectionThresh": 0.74,
+      "closedThresh": 0.06,
+      "color" : "#faf36e"
+    }
+  ]
+}

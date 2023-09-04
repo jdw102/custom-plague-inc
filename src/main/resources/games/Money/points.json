@@ -1,0 +1,21 @@
+{
+  "pointsParameters": {
+    "pointsOperation": "DifferenceOperation",
+    "growthFactorsOperation": "SumOperation",
+    "spreadFactorsOperation": "SumOperation",
+    "populations": [
+      "Customer"
+    ],
+    "growthFactors": [
+      {
+        "type": "CoreFactor",
+        "name": "Price",
+        "operation": "NormalOperation"
+      }
+    ],
+    "spreadFactors": [
+    ],
+    "maxPoints": 10000000000,
+    "startPoints": 0
+  }
+}
